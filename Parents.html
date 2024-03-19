@@ -1,0 +1,225 @@
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Home.css">
+        <style>
+            #Title {
+                font-size: 70px;
+                text-align: center;
+                color: rgb(5, 249, 220);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5); 
+                margin-top: 10px;
+                letter-spacing: 2px;
+                border: none;
+            }
+            .container {
+                margin: 50px 50px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .container-1, .container-2 {
+                margin: 50px 250px;
+                display: inline-flex;
+                justify-content: space-between;
+                display: none;
+            }
+            .nav-items a.active {
+                text-decoration: underline;
+            }
+            .box {
+                width: calc(30% - 20px); /* Reduced width with space between the boxes */
+                padding: 20px 30px;
+                border: 1px solid #444; /* Darker border color */
+                border-radius: 20px;
+                position: relative;
+                background-color: #333; /* Darker background color */
+                color: #fff; /* White text color */
+                text-align: center; /* Center align text */
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+            .box h2 {
+                margin-top: 0;
+            }
+            .box:nth-child(1) {
+                background: linear-gradient(to bottom, rgba(94, 170, 240, 0.8), #f0f0f0); /* Fading gradient to white */
+                margin-right: 10px; 
+            }
+            .box:nth-child(2) {
+                background: linear-gradient(to bottom, rgba(250, 75, 235, 0.8), #f0f0f0); /* Fading gradient to white */
+                margin: 0 50px; 
+            }
+            .box:nth-child(3) {
+                background: linear-gradient(to bottom, rgba(154, 253, 93, 0.8), #f0f0f0); /* Fading gradient to white */
+                margin-left: 10px; 
+            }
+            .container-1, .container-2 {
+                max-width: 800px;
+                margin: 20px auto;
+                display: none;
+            }
+            .card {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                padding: 20px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.725);
+            }
+            .card h2 {
+                text-align: center;
+            }
+            .vaccine-list {
+                margin-top: 10px;
+            }
+            .vaccine-list li {
+                margin-bottom: 5px;
+                list-style-type: none;
+                text-align: center;
+                font-size: 20px;
+            }
+            .explanation {
+                margin-top: 10px;
+            }
+    </style>
+    </head>
+    <body>
+        <header>
+            <h1>Charts Up</h1>
+            <div class="nav-items">
+                <a href="Home.html">Home</a>
+                <u><a href="Parents.html">Parents</a></u>
+            </div>   
+            <div class="nav-buttons">
+                <button class="log-in">  Log in  </button>
+                <button class="sign-up"> Sign up </button>
+            </div>
+        </header>
+        <h1 id="Title">Parents</h1>
+        <div class="container">
+            <div class="box" id="physicalbox">
+                <h2>Physical changes</h2>
+            </div>
+            <div class="box" id="emotionalbox">
+                <h2>Mental and Emotional Changes</h2>
+            </div>
+            <div class="box">
+                <h2>Self Care</h2>
+            </div>
+        </div>
+        <div class="container-1">
+            <div class="card">
+                <h2>Postpartum Recovery</h2>
+                <div class="explanation">
+                    <p>Mothers undergo a process of physical recovery after childbirth, which can include healing from any tears or incisions from a vaginal delivery or cesarean section.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>Uterine Contractions</h2>
+                <div class="explanation">
+                    <p>The uterus continues to contract after childbirth to shrink back to its pre-pregnancy size. These contractions, known as afterpains, can be uncomfortable but are a natural part of the postpartum period.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>Vaginal Bleeding</h2>
+                <div class="explanation">
+                    <p>Lochia, a discharge consisting of blood, mucus, and uterine tissue, is normal after childbirth. It can last for several weeks and gradually decrease in flow.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>Breast Changes</h2>
+                <div class="explanation">
+                    <p>Mothers experience changes in their breasts as they produce milk for breastfeeding. This can include engorgement, leaking, and changes in breast size and sensitivity.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>Hormonal Shifts</h2>
+                <div class="explanation">
+                    <p>Hormonal fluctuations occur postpartum, which can affect mood, energy levels, and physical sensations.</p>
+                </div>
+            </div>
+        </div>
+        <div class="container-2">
+            <div class="card">
+                <h2>Postpartum Blues</h2>
+                <div class="explanation">
+                    <p>Many mothers experience mood swings, tearfulness, and feelings of anxiety or sadness in the days following childbirth. These symptoms are often referred to as the "baby blues" and are considered a normal response to hormonal changes and the challenges of adjusting to motherhood.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>Postpartum Depression (PPD)</h2>
+                <div class="explanation">
+                    <p>Some mothers may experience more severe and persistent symptoms of depression after childbirth, which can interfere with their ability to function and care for their baby. Postpartum depression requires professional treatment and support.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>Anxiety</h2>
+                <div class="explanation">
+                    <p>New mothers may experience heightened anxiety about their baby's health and well-being, their ability to care for their newborn, and the changes in their own lives.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>Fatigue</h2>
+                <div class="explanation">
+                    <p>Sleep deprivation is common for new mothers, which can contribute to feelings of exhaustion and overwhelm.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>Bonding</h2>
+                <div class="explanation">
+                    <p>Many mothers experience a deepening bond with their baby in the weeks following childbirth, although this process can take time and may be influenced by various factors, including the birthing experience and support network.</p>
+                </div>
+            </div>
+        </div>
+        
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank" width="30px" class="social-icon">F</a>
+                <a href="https://www.instagram.com/" target="_blank" width="30px" class="social-icon">I</a>
+                <a href="https://www.linkedin.com/" target="_blank" width="30px" class="social-icon">L</a>
+                <a href="https://twitter.com/" target="_blank"  width="30px" class="social-icon">T</a>
+            </div>
+              <div class="copyright">
+                <p>Copyright © 2024 Charts Up</p>
+            </div>
+              <div class="privacy-policy">
+                <a href="" target="_blank">Privacy Policy</a>
+              </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const physicalbox = document.getElementById('physicalbox');
+            const vaccineList = document.querySelector('.container-1');
+
+            // Add event listener to toggle display
+            physicalbox.addEventListener('click', function() {
+                const isVisible = vaccineList.style.display === 'block';
+
+                // Toggle visibility of the vaccine list
+                vaccineList.style.display = isVisible ? 'none' : 'block';
+            });
+            });
+            document.addEventListener('DOMContentLoaded', function() {
+            const emotionalbox = document.getElementById('emotionalbox');
+            const gender = document.querySelector('.container-2');
+
+            // Add event listener to toggle display
+            emotionalbox.addEventListener('click', function() {
+                const isVisible = gender.style.display === 'block';
+
+                // Toggle visibility of the vaccine list
+                gender.style.display = isVisible ? 'none' : 'block';
+            });
+            });
+        </script>
+    </body>
+</html>

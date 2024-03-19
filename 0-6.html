@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Home.css">
+        <style>
+            #Title {
+                font-size: 50px;
+                text-align: center;
+                color: rgb(249, 5, 98);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+                margin-top: 10px;
+                letter-spacing: 2px;
+            }
+            .container {
+                margin: 50px 150px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .nav-items a.active {
+                text-decoration: underline;
+            }
+            .box {
+                width: calc(30% - 20px); /* Reduced width with space between the boxes */
+                padding: 20px 30px;
+                border: 1px solid #444; /* Darker border color */
+                border-radius: 20px;
+                position: relative;
+                background-color: #333; /* Darker background color */
+                color: #fff; /* White text color */
+                text-align: center; /* Center align text */
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+            .box h2 {
+                margin-top: 0;
+            }
+            /* Health Care */
+            .box:nth-child(1) {
+                background: linear-gradient(to bottom, rgba(94, 170, 240, 0.8), #f0f0f0); /* Fading gradient to white */
+                margin-right: 10px; 
+            }
+            /* Child Care */
+            .box:nth-child(2) {
+                background: linear-gradient(to bottom, rgba(250, 75, 235, 0.8), #f0f0f0); /* Fading gradient to white */
+                margin: 0 100px; 
+            }
+            /* Food */
+            .box:nth-child(3) {
+                background: linear-gradient(to bottom, rgba(154, 253, 93, 0.8), #f0f0f0); /* Fading gradient to white */
+                margin-left: 10px; 
+            }
+            .container-v {
+                max-width: 800px;
+                margin: 20px auto;
+                display: none;
+            }
+            .card {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                padding: 20px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.725);
+            }
+            .card h2 {
+                text-align: center;
+            }
+            .vaccine-list {
+                margin-top: 10px;
+            }
+            .vaccine-list li {
+                margin-bottom: 5px;
+                list-style-type: none;
+                text-align: center;
+                font-size: 20px;
+            }
+            .explanation {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Charts Up</h1>
+            <div class="nav-items">
+                <a href="Home.html">Home</a>
+                <a href="Parents.html">Parents</a>
+            </div>   
+            <div class="nav-buttons">
+                <button class="log-in">  Log in  </button>
+                <button class="sign-up"> Sign up </button>
+            </div>
+        </header>
+        <h1 id="Title">0 - 6 years</h1>
+        <div class="container">
+            <div class="box" id="healthCareBox">
+                <h2>Health Care</h2>
+            </div>
+            <div class="box" id="childCareBox">
+                <h2>Child Care</h2>
+            </div>
+            <div class="box" id="foodBox">
+                <h2>Food</h2>
+            </div>
+        </div>
+        <div class="container-v">
+            <div class="card">
+                <h2>Birth</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>BCG, Hep B1, OPV</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>BCG (Bacillus Calmette-Guérin):</strong> Protects against tuberculosis, especially severe forms like TB meningitis and miliary TB.</p>
+                    <p><strong>Hep B1 (Hepatitis B Vaccine 1st dose):</strong> Prevents hepatitis B, a serious liver infection caused by the hepatitis B virus.</p>
+                    <p><strong>OPV (Oral Polio Vaccine):</strong> Provides immunity against polio, a highly infectious viral disease that can cause paralysis.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>6 weeks</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>DTwP /DTaP1, Hib-1, IPV-1, Hep B2, PCV 1, Rota-1</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>DTwP / DTaP (Diphtheria, Tetanus, Pertussis Vaccine - 1st dose):</strong> Protects against diphtheria, tetanus, and whooping cough (pertussis), serious infectious diseases caused by bacteria.</p>
+                    <p><strong>Hib-1 (Haemophilus influenzae type b Vaccine - 1st dose):</strong> Prevents Haemophilus influenzae type b infections, which can cause serious illnesses like meningitis and pneumonia.</p>
+                    <p><strong>IPV-1 (Inactivated Polio Vaccine - 1st dose):</strong> Provides immunity against polio, a highly infectious viral disease that can cause paralysis.</p>
+                    <p><strong>Hep B2 (Hepatitis B Vaccine 2nd dose):</strong> Continues to build immunity against hepatitis B, a serious liver infection caused by the hepatitis B virus.</p>
+                    <p><strong>PCV 1 (Pneumococcal Conjugate Vaccine - 1st dose):</strong> Protects against pneumococcal diseases such as pneumonia, meningitis, and bloodstream infections caused by Streptococcus pneumoniae bacteria.</p>
+                    <p><strong>Rota-1 (Rotavirus Vaccine - 1st dose):</strong> Prevents rotavirus infections, a common cause of severe diarrhea and dehydration in infants and young children.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>10 weeks</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>DTwP /DTaP2, Hib-2, IPV-2, Hep B3, PCV 2, Rota-2</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>DTwP / DTaP (Diphtheria, Tetanus, Pertussis Vaccine - 2nd dose):</strong> Boosts immunity against diphtheria, tetanus, and whooping cough (pertussis).</p>
+                    <p><strong>Hib-2 (Haemophilus influenzae type b Vaccine - 2nd dose):</strong> Provides additional protection against Haemophilus influenzae type b infections.</p>
+                    <p><strong>IPV-2 (Inactivated Polio Vaccine - 2nd dose):</strong> Boosts immunity against polio.</p>
+                    <p><strong>Hep B3 (Hepatitis B Vaccine 3rd dose):</strong> Further strengthens immunity against hepatitis B.</p>
+                    <p><strong>PCV 2 (Pneumococcal Conjugate Vaccine - 2nd dose):</strong> Provides continued protection against pneumococcal diseases.</p>
+                    <p><strong>Rota-2 (Rotavirus Vaccine - 2nd dose):</strong> Reinforces protection against rotavirus infections.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>14 weeks</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>DTwP /DTaP3, Hib-3, IPV-3, Hep B4, PCV 3, Rota-3*</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>DTwP / DTaP (Diphtheria, Tetanus, Pertussis Vaccine - 3rd dose):</strong> Completes the primary series for diphtheria, tetanus, and whooping cough (pertussis) vaccinations.</p>
+                    <p><strong>Hib-3 (Haemophilus influenzae type b Vaccine - 3rd dose):</strong> Completes the primary series for Haemophilus influenzae type b vaccinations.</p>
+                    <p><strong>IPV-3 (Inactivated Polio Vaccine - 3rd dose):</strong> Completes the primary series for inactivated polio vaccinations.</p>
+                    <p><strong>Hep B4 (Hepatitis B Vaccine 4th dose):</strong> Provides the final dose to ensure long-term immunity against hepatitis B.</p>
+                    <p><strong>PCV 3 (Pneumococcal Conjugate Vaccine - 3rd dose):</strong> Completes the primary series for pneumococcal conjugate vaccinations.</p>
+                    <p><strong>Rota-3 (Rotavirus Vaccine - 3rd dose):</strong> Provides the final dose for full protection against rotavirus infections.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>6 months</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>Influenza-1</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>Influenza Vaccine (Flu Shot - 1st dose):</strong> Provides protection against influenza viruses, which can cause seasonal flu outbreaks.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>7 months</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>Influenza-2</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>Influenza Vaccine (Flu Shot - 2nd dose):</strong> Continues to provide protection against influenza viruses.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>6-9 months</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>Typhoid Conjugate Vaccine</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>Typhoid Conjugate Vaccine:</strong> Protects against typhoid fever, a bacterial infection caused by Salmonella Typhi bacteria, commonly found in contaminated food and water.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>9 months</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>MMR 1 (Mumps, Measles, Rubella)</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>MMR Vaccine (Measles, Mumps, Rubella - 1st dose):</strong> Protects against measles, mumps, and rubella, three highly contagious viral diseases that can cause serious complications.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>12 months</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>Hepatitis A- 1</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>Hepatitis A Vaccine (1st dose):</strong> Prevents hepatitis A, a viral liver disease usually spread through contaminated food and water.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>12 - 15 months</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>PCV Booster</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>PCV Booster (Pneumococcal Conjugate Vaccine Booster):</strong> Provides a booster dose to reinforce immunity against pneumococcal diseases.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>15 months</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>MMR 2, Varicella</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>MMR Vaccine (Measles, Mumps, Rubella - 2nd dose):</strong> Completes the MMR vaccine series for full protection against measles, mumps, and rubella.</p>
+                    <p><strong>Varicella Vaccine (Chickenpox Vaccine):</strong> Prevents chickenpox, a highly contagious viral infection caused by the varicella-zoster virus.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>16 - 18 months</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>DTwP /DTaP, Hib, IPV</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>DTwP / DTaP (Diphtheria, Tetanus, Pertussis Vaccine - Booster):</strong> Boosts immunity against diphtheria, tetanus, and whooping cough (pertussis).</p>
+                    <p><strong>Hib (Haemophilus influenzae type b Vaccine - Booster):</strong> Boosts immunity against Haemophilus influenzae type b infections.</p>
+                    <p><strong>IPV (Inactivated Polio Vaccine - Booster):</strong> Provides a booster dose to reinforce immunity against polio.</p>
+                </div>
+            </div>
+
+            <div class="card">
+                <h2>4 – 6 years</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>DTwP /DTaP, IPV, MMR 3</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>DTwP / DTaP (Diphtheria, Tetanus, Pertussis Vaccine - Booster):</strong> Boosts immunity against diphtheria, tetanus, and whooping cough (pertussis).</p>
+                    <p><strong>IPV (Inactivated Polio Vaccine - Booster):</strong> Provides a booster dose to reinforce immunity against polio.</p>
+                    <p><strong>MMR Vaccine (Measles, Mumps, Rubella - Booster):</strong> Boosts immunity against measles, mumps, and rubella.</p>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank" width="30px" class="social-icon">F</a>
+                <a href="https://www.instagram.com/" target="_blank" width="30px" class="social-icon">I</a>
+                <a href="https://www.linkedin.com/" target="_blank" width="30px" class="social-icon">L</a>
+                <a href="https://twitter.com/" target="_blank"  width="30px" class="social-icon">T</a>
+            </div>
+              <div class="copyright">
+                <p>Copyright © 2024 Charts Up</p>
+            </div>
+              <div class="privacy-policy">
+                <a href="" target="_blank">Privacy Policy</a>
+              </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const healthCareBox = document.getElementById('healthCareBox');
+            const vaccineList = document.querySelector('.container-v');
+
+            // Add event listener to toggle display
+            healthCareBox.addEventListener('click', function() {
+                const isVisible = vaccineList.style.display === 'block';
+
+                // Toggle visibility of the vaccine list
+                vaccineList.style.display = isVisible ? 'none' : 'block';
+            });
+            });
+        </script>
+    </body>
+</html>

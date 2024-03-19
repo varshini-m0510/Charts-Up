@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="stylesheet" href="Home.css">
+        <style>
+            #Title {
+                font-size: 50px;
+                text-align: center;
+                color: rgb(249, 5, 98);
+                font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; 
+                text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3); 
+                margin-top: 10px;
+                letter-spacing: 2px;
+            }
+            .container {
+                margin: 50px 150px;
+                display: flex;
+                justify-content: space-between;
+            }
+            .container-1 {
+                margin: 50px 250px;
+                display: inline-flex;
+                justify-content: space-between;
+                display: none;
+                border: 2px solid red;
+            }
+            .nav-items a.active {
+                text-decoration: underline;
+            }
+            .box {
+                width: calc(30% - 20px); /* Reduced width with space between the boxes */
+                padding: 20px 30px;
+                border: 1px solid #444; /* Darker border color */
+                border-radius: 20px;
+                position: relative;
+                background-color: #333; /* Darker background color */
+                color: #fff; /* White text color */
+                text-align: center; /* Center align text */
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.5);
+                cursor: pointer;
+            }
+            .box h2 {
+                margin-top: 0;
+            }
+            /* Health Care */
+            .box:nth-child(1) {
+                background: linear-gradient(to bottom, rgba(94, 170, 240, 0.8), #f0f0f0); /* Fading gradient to white */
+                margin-right: 10px; 
+            }
+            /* Child Care */
+            .box:nth-child(2) {
+                background: linear-gradient(to bottom, rgba(250, 75, 235, 0.8), #f0f0f0); /* Fading gradient to white */
+                margin: 0 100px; 
+            }
+            /* Food */
+            .box:nth-child(3) {
+                background: linear-gradient(to bottom, rgba(154, 253, 93, 0.8), #f0f0f0); /* Fading gradient to white */
+                margin-left: 10px; 
+            }
+            .container-v {
+                max-width: 800px;
+                margin: 20px auto;
+                display: none;
+            }
+            .card {
+                border: 1px solid #ccc;
+                border-radius: 5px;
+                margin-bottom: 20px;
+                padding: 20px;
+                box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.725);
+            }
+            .card h2 {
+                text-align: center;
+            }
+            .vaccine-list {
+                margin-top: 10px;
+            }
+            .vaccine-list li {
+                margin-bottom: 5px;
+                list-style-type: none;
+                text-align: center;
+                font-size: 20px;
+            }
+            .explanation {
+                margin-top: 10px;
+            }
+        </style>
+    </head>
+    <body>
+        <header>
+            <h1>Charts Up</h1>
+            <div class="nav-items">
+                <a href="Home.html">Home</a>
+                <a href="Parents.html">Parents</a>
+            </div>   
+            <div class="nav-buttons">
+                <button class="log-in">  Log in  </button>
+                <button class="sign-up"> Sign up </button>
+            </div>
+        </header>
+        <h1 id="Title">13 - 18 years</h1>
+        <div class="container">
+            <div class="box" id="healthCareBox">
+                <h2>Health Care</h2>
+            </div>
+            <div class="box" id="childCareBox">
+                <h2>Puberty</h2>
+            </div>
+        </div>
+        <div class="container-v">
+            <div class="card">
+                <h2>13 - 14 years</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>HPV Vaccine (if not completed earlier), MenACWY Vaccine (Booster)</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>HPV Vaccine (if not completed earlier):</strong> Human Papillomavirus (HPV) vaccine is recommended for both boys and girls to protect against HPV infections, which can lead to various cancers, including cervical, anal, and throat cancers. If not completed earlier, the series should be initiated or completed during these ages.</p>
+                    <p><strong>MenACWY Vaccine (Booster):</strong> Meningococcal conjugate vaccine helps protect against meningococcal disease, which can cause meningitis and bloodstream infections. A booster dose is typically recommended during adolescence for continued protection.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>15 - 16 years</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>MenACWY Vaccine (Booster), Tdap Vaccine (Booster)</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>MenACWY Vaccine (Booster):</strong> Another dose of meningococcal conjugate vaccine (MenACWY) may be recommended at this age for continued protection against meningococcal disease.</p>
+                    <p><strong>Tdap Vaccine (Booster):</strong> Tetanus, diphtheria, and pertussis (whooping cough) vaccine booster is recommended during adolescence to maintain immunity against these diseases.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>17 - 18 years</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>MenACWY Vaccine (Booster), MenB Vaccine (Series)</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>MenACWY Vaccine (Booster):</strong> If not already received, adolescents should receive a booster dose of meningococcal conjugate vaccine for continued protection.</p>
+                    <p><strong>MenB Vaccine (Series):</strong> Serogroup B meningococcal vaccine helps protect against meningococcal disease caused by serogroup B bacteria. It's typically given as a two-dose series, with the second dose administered 1-2 months after the first dose.</p>
+                </div>
+            </div>
+        
+            <div class="card">
+                <h2>Yearly (Ages 13-18)</h2>
+                <div class="vaccine-list">
+                    <ul>
+                        <li>Flu Vaccine (Yearly)</li>
+                    </ul>
+                </div>
+                <div class="explanation">
+                    <p><strong>Flu Vaccine (Yearly):</strong> Annual influenza vaccination is recommended to protect against seasonal flu viruses. It helps prevent flu-related illnesses, hospitalizations, and complications.</p>
+                </div>
+            </div>
+        </div>            
+        <footer>
+            <div class="social-media">
+                <a href="https://www.facebook.com/" target="_blank" width="30px" class="social-icon">F</a>
+                <a href="https://www.instagram.com/" target="_blank" width="30px" class="social-icon">I</a>
+                <a href="https://www.linkedin.com/" target="_blank" width="30px" class="social-icon">L</a>
+                <a href="https://twitter.com/" target="_blank"  width="30px" class="social-icon">T</a>
+            </div>
+              <div class="copyright">
+                <p>Copyright © 2024 Charts Up</p>
+            </div>
+              <div class="privacy-policy">
+                <a href="" target="_blank">Privacy Policy</a>
+              </div>
+        </footer>
+        <script>
+            document.addEventListener('DOMContentLoaded', function() {
+            const healthCareBox = document.getElementById('healthCareBox');
+            const vaccineList = document.querySelector('.container-v');
+
+            // Add event listener to toggle display
+            healthCareBox.addEventListener('click', function() {
+                const isVisible = vaccineList.style.display === 'block';
+
+                // Toggle visibility of the vaccine list
+                vaccineList.style.display = isVisible ? 'none' : 'block';
+            });
+            });
+        </script>
+    </body>
+</html>
